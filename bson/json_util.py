@@ -71,7 +71,10 @@ import base64
 import calendar
 import collections
 import datetime
-import json
+try:
+    import simplejson as json
+except ImportError:
+    import json
 import re
 import uuid
 
