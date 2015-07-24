@@ -90,12 +90,9 @@ import time
 
 json_lib = True
 try:
-    import json
+    import simplejson as json
 except ImportError:
-    try:
-        import simplejson as json
-    except ImportError:
-        json_lib = False
+    import json
 
 import bson
 from bson import EPOCH_AWARE, RE_TYPE, SON
